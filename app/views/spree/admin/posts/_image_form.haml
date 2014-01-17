@@ -1,0 +1,16 @@
+= form_for @image, url: create_image_admin_post_url(@post), html: { multipart: true } do |f|
+  %fieldset
+    %h5= t('image.new')
+    .field{data: { hook: "file" }}
+      = f.label Spree.t(:filename)
+      %br
+      = f.file_field :attachment
+
+    .field{data: { hook:"alt_text" }}
+      %br
+      = f.label Spree.t(:alt_text)
+      %br
+      = f.text_area :alt, rows: 2, class: 'fullwidth'
+
+    .form-buttons.filter-actions.actions{data: { hook: "buttons" }}
+      = f.submit t('spree.create')

@@ -1,0 +1,23 @@
+= content_for :page_title do
+  = t('post.all')
+
+= content_for :page_actions do
+  %li#new_post_link= link_to t('post.new'), :new_admin_post, class: "button"
+
+- if @posts.count > 0
+  %table
+    %thead
+      %th= t('title')
+      %th.actions
+    %tbody
+    - @posts.each do |post|
+      %tr
+        %td
+          = post.created_at.to_s(:short)
+          |
+          = link_to post.title, edit_admin_post_path(post)
+        %td.actions
+          = link_to_with_icon 'icon-edit', Spree.t(:edit), edit_admin_post_path(post), no_text: true, data: {action: 'edit'}
+          = link_to_delete post, { url: admin_post_path(post), no_text: true }
+- else
+  %h3= t('post.empty')

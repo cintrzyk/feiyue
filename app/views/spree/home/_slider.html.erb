@@ -1,0 +1,20 @@
+<% if @slider_products %>
+  <div id="home-slider">
+    <ul>
+      <% @slider_products.each do |product| %>
+        <li>
+          <div class="product-image">
+            <%= link_to product_image(product), product %>
+          </div>
+          <div class="product-info">
+            <h1 class="product-title"><%= product.name %></h1>
+            <div class="product-description">
+              <%= product.description.to_s.html_safe %>
+            </div>
+            <!-- order form -->
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

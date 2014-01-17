@@ -1,0 +1,9 @@
+- if !@product.taxons.blank?
+  #taxon-crumbs.alpha.columns.five.omega{ data: { hook: true } }
+    %h6.product-section-title= Spree.t(:look_for_similar_items)
+
+    %div{ data: { hook: "product_taxons" } }
+      %ul#similar_items_by_taxon{ data: { hook: true } }
+      - @product.taxons.each do |taxon|
+        - if taxon.name != 'Slider'
+          %li= link_to taxon.name, seo_url(taxon)

@@ -1,0 +1,9 @@
+nl:
+  image:
+    new: "Nieuwe afbeelding"
+    many: "Beelden"
+    empty: "Geen afbeeldingen"
+
+    notices:
+      created: "Image gemaakt"
+      deleted: "Image bijgewerkt"

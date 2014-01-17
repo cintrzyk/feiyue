@@ -1,0 +1,13 @@
+#print.hidden
+  %h1
+    = @contact.name
+    = l @contact.created_at
+  %br
+  = render 'personal_table'
+
+  %h3 Gebouw afmetingen
+  = draw_house_size_table(@sizes)
+
+  .row
+    %h3= t('contact_question')
+    = simple_format(@contact.question)

@@ -1,0 +1,21 @@
+%h3 Aanvrager
+%br
+%table
+  %tr
+    %td= t('contact.email')
+    %td= mail_to @contact.email, @contact.email
+  %tr
+    %td= t('contact.phone')
+    %td= @contact.phone.phony_formatted(format: :international, spaces: ' ')
+  %tr
+    %td= t('contact.address')
+    %td= @contact.address
+  %tr
+    %td= t('contact.orientation')
+    %td= @contact.orientation
+  %tr
+    %td= t('contact.installation_size').truncate(20)
+    %td= @contact.size
+  %tr
+    %td= t('roof')
+    %td= @contact.roof

@@ -1,0 +1,11 @@
+module Spree
+  class PostsController < Spree::StoreController
+    def index
+      @posts = Post.order(created_at: :desc)
+    end
+
+    def show
+      @post = Post.find(params[:id])
+    end
+  end
+end

@@ -1,0 +1,30 @@
+%div{ data: { hook: "product_show" }, itemscope: true, itemtype: "http://schema.org/Product" }
+  - @body_id = 'product-details'
+
+  .columns.six.alpha{ data: { hook: "product_left_part" } }
+    .row{ data: { hook: "product_left_part_wrap" } }
+      #product-images{ data: { hook: "product_images" } }
+        #main-image{ data: { hook: true } }= render 'image'
+        #thumbnails{ data: { hook: true } }= render 'thumbnails'
+
+      - unless @product.doc.to_s == ''
+        .doc
+          %h6.product-section-title= t('documentation')
+          = link_to(cl_image_tag(@product.doc, format: "jpg", width: 80, height: 100), @product.doc.to_s, target: "_blank")
+
+      %div{ data: { hook: "product_properties" } }= render 'properties'
+      %div{ data: { hook: "promotions" } }= render 'promotions'
+
+  .columns.ten.omega{ data: { hook: "product_right_part" } }
+    .row{ data: { hook: "product_right_part_wrap" } }
+      %a.ask-for-price.pull-right.btn{ href: "#", product_id: @product.id }
+        %i.fa.fa-eur
+        prijs op aanvraag
+      %input#amount-price.pull-right.hidden{ type: "number" }
+      %input#email-price.pull-right.hidden{ placeholder: "Email", type: "email" }
+      #product-description{ data: { hook: "product_description" } }
+        %h1.product-title{ itemprop: "name" }= accurate_title
+        #cart-form{ data: { hook: "cart_form" } }= render 'cart_form'
+        %div{ itemprop: "description", data: { hook: "description" } }= product_description(@product) rescue Spree.t(:product_has_no_description)
+      = render 'sizes'
+      = render 'taxons'

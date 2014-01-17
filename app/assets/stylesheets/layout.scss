@@ -1,0 +1,88 @@
+body {
+  color: $body_text_color;
+  font-size: $body_font_size;
+  font-family: $ff_base;
+
+  #logo { margin: 0px 5px 25px 10px; }
+  #question_area { width: 90%; }
+  #bar-chart { height: 280px; }
+  #line-chart { height: 180px; }
+
+  .small-input { max-width: 90px; }
+
+  .success {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 30px 15px 70px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('success.png');
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input#amount-price {
+    width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  input#email-price { width: 175px; }
+
+  #profit-settings {
+    text-align: center;
+    margin: 0 auto;
+    #total-donut { height: 180px; }
+  }
+
+  .border-radius8 {
+    @include border-radius(8px);
+
+    &:hover {
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px #888;
+      box-shadow: 0 0 5px #888;
+    }
+  }
+
+  .box-shadow-f {
+    -moz-box-shadow: 0 0 5px $c_blue;
+    -webkit-box-shadow: 0 0 5px $c_blue;
+    box-shadow: 0 0 5px $c_blue;
+  }
+
+  #profit_btn a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+
+  #house-size {
+    .house-slider {
+      margin-top: 10px;
+      min-width: 270px;
+      float: right;
+    }
+  }
+
+  #post-list {
+    text-align: left;
+    .row { margin-top: 15px; }
+  }
+
+  #zone-list {
+    color: $body_text_color;
+    li { margin-bottom: 10px; }
+  }
+
+  #faq-list li {
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+}

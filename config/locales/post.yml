@@ -1,0 +1,11 @@
+nl:
+  post:
+    all: "Meer nieuws"
+    new: "Nieuw bericht"
+    empty: "Geen berichten"
+    many: "Nieuws"
+
+    notices:
+      created: "Nieuws wordt gemaakt"
+      updated: "Nieuws wordt bijgewerkt"
+      deleted: "Nieuw is verwijderd"

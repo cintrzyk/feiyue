@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: feiyue_dev
+  pool: 5
+  username: feiyue
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: feiyue_test
+  pool: 5
+  username: feiyue
+  password: password
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: feiyue_pro
+  pool: 5
+  username: feiyue
+  password: password

@@ -1,0 +1,51 @@
+%footer#footer.sixteen.columns{ data: { hook: true } }
+  .container
+    .four.columns
+      = image_tag "logo-white-small.png", alt: "Feiyue Solar Logo", id: "footer-logo"
+      %br
+      %br
+      .phone
+        = link_to 'T: +31 (0)541 712 468', 'callto:0541712468', title: 'feiyue solar phone'
+        %br
+        = link_to 'F: +31 (0)541 570 211', 'callto:0541570211', title: 'feiyue solar phone'
+      %br
+      .email
+        = mail_to 'info@feiyuesolar.nl', 'E: info@feiyuesolar.nl'
+        %br
+        = link_to 'I: feiyuesolar.nl', 'http://feiyuesolar.nl'
+        %br
+        = link_to 'I: zonis.nl', 'http://zonis.nl'
+        %br
+        = link_to 'I: feiyue-solar.com', 'http://feiyue-solar.com'
+
+    .four.columns
+      %h5= t(:find_us)
+      %p
+        Feiyue Solar B.V.
+        %br
+        Enschedesestraat 6A
+        %br
+        7575 AB Oldenzaal
+        %br
+        %a{ title: 'google map', href: 'https://maps.google.nl/maps?q=Enschedesestraat+6A++7575+AB+Oldenzaal&hl=nl&ll=52.304267,6.931295&spn=0.002139,0.005681&sll=52.469397,5.509644&sspn=2.181914,5.817261&hnear=Enschedesestraat+6,+7575+AB+Oldenzaal,+Overijssel&t=m&z=18' }= image_tag 'map.png', alt: 'Feiyue Solar Map'
+
+    .four.columns
+      %h5= t(:on_page)
+      %ul
+        %li= link_to Spree.t(:home), root_path
+        %li= link_to Spree.t(:shop), products_path
+        %li= link_to t(:about), about_path
+        %li= link_to t(:profit), profit_path
+        %li= link_to t('post.many'), posts_path
+        %li= link_to t(:faq), faq_path
+        %li= link_to t('contact.single'), new_contact_path
+
+    .four.columns
+      %h5= t(:links)
+      %ul
+        %li= link_to 'feiyue.dk', 'http://www.feiyue.dk'
+        %li= link_to 'znshine-solar.com', 'http://www.znshine-solar.com/'
+        %li= link_to 'europe.refusol.com', 'http://europe.refusol.com/'
+        %li= link_to 'rijksoverheid.nl', 'http://www.rijksoverheid.nl/onderwerpen/duurzame-energie/zonne-energie'
+        %li= link_to 'agentschapnl.nl', 'http://www.agentschapnl.nl/subsidies-regelingen/zonnepanelen'
+        %li= link_to 'cbs.nl', 'http://www.cbs.nl/nl-NL/menu/themas/industrie-energie/publicaties/artikelen/archief/2012/2012-3582-wm.htm'

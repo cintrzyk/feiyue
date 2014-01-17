@@ -1,0 +1,42 @@
+- if @is_product_sizes || @product.has_variants?
+  .row.responsive-table
+    %br
+    %table
+      %thead
+        - if @product.has_variants?
+          %th
+        %th= t('width')
+        %th= t('height')
+        %th= t('depth')
+        %th= t('weight')
+      %tbody
+        - if @product.has_variants?
+          - @variants[1..-1].each do |v|
+            %tr
+              %td.blue{ data: { title: "" } }= v.options_text
+              %td{ data: { title: t('width') } }
+                = v.width.to_i
+                mm
+              %td{ data: { title: t('height') } }
+                = v.height.to_i
+                mm
+              %td{ data: { title: t('depth') } }
+                = v.depth.to_i
+                mm
+              %td{ data: { title: t('weight') } }
+                = v.weight.to_f
+                kg
+        - else
+          %tr
+            %td{ data: { title: t('width') } }
+              = @product_sizes[:width].to_i
+              mm
+            %td{ data: { title: t('height') } }
+              = @product_sizes[:height].to_i
+              mm
+            %td{ data: { title: t('depth') } }
+              = @product_sizes[:depth].to_i
+              mm
+            %td{ data: { title: t('weight') } }
+              = @product_sizes[:weight].to_f
+              kg

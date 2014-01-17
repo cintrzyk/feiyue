@@ -1,0 +1,47 @@
+= content_for :subheader do
+  %h1.page-title= t('about')
+
+.row
+  .columns.five
+    %ul
+      %li
+        %a{href: "#over"}= t('about')
+      %li
+        %a{href: "#montage"}= t('about_page.montage.title')
+      %li
+        %a{href: "#door"}= t('about_page.by_feiyue.title')
+      %li
+        %a{href: "#adviseur"}= t('about_page.consultant.title')
+      %li
+        %a{href: "#standaard"}= t('about_page.standard.title')
+
+  .columns.ten
+    %h3#over= t('about')
+    = t('about_page.over.content1_html')
+    = t('about_page.over.content2_html')
+
+    %h3#montage
+      = t('about_page.montage.title')
+      = to_top
+    %p.orange
+      %strong= t('about_page.montage.installation_team')
+    = t('about_page.montage.content1_html')
+
+    %p.orange
+      %strong= t('about_page.montage.schletter')
+    = t('about_page.montage.content3_html')
+
+    %h3#door
+      = t('about_page.by_feiyue.title')
+      = to_top
+    = t('about_page.by_feiyue.content_html')
+
+    %h3#adviseur
+      = t('about_page.consultant.title')
+      = to_top
+    = t('about_page.consultant.content_html')
+
+    %h3#standaard
+      = t('about_page.standard.title')
+      = to_top
+    = t('about_page.standard.content_html')

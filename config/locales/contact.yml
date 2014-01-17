@@ -1,0 +1,25 @@
+nl:
+  contact:
+    single: "Contact"
+    many: "Contacten"
+    title: "Vrijblijvend advies op maat"
+    question: "Vragen of opmerkingen"
+    form: "contactformulier"
+    from: "Contacten van klanten"
+    building_dim: "Gebouw afmetingen"
+    value_in_m: "Vul hier in meters de ruimte voor zonnepanelen"
+    note: "Bij schiltdak en wolfseinden de afmeting van het dakvlak aangeven. Als er obstakels op het dak aanwezig zijn zoals dakramen schoorstenen of andere aan en afvoeren dan dienen er gemaatvoerde tekeningen te worden aangeleverd."
+    sender: "Aanvrager"
+    roof: "Dak"
+    installation_size: "Grootte van gewenste installatie/Schatting jaarlijks verbruik"
+    house_orientation: "Oriëntatie dakvlak"
+    flat: "Plat dak"
+    tiled: "Dakpannen"
+    other: "Anders"
+    submit: "Verzenden"
+    new: "Nieuw contact"
+
+    notices:
+      success: "Dank u voor het verzenden naar ons bericht!"
+      error: "Controleer alle formuliervelden ..."
+      deleted: "Contact is verwijderd"

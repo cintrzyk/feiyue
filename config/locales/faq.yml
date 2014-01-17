@@ -1,0 +1,39 @@
+nl:
+  q1: "Moeten de panelen worden schoongemaakt?"
+  a1: "Wij raden aan de panelen minimaal één keer per jaar schoon te maken. Als de panelen onder een hoek van meer dan 20 graden worden gemonteerd, zijn ze zelfreinigend. Vogelpoep, pollen, mosgroei, stof, etc., spoelen weg bij regen."
+
+  q2: "Voor een zonnepanelensysteem van bijvoorbeeld 6 kW worden twee omvormers van 3 kW gebruikt. Waarom niet één omvormer van 6 kW?"
+  a2: "Het gebruik van één omvormer van 6 kW heeft geen voordelen ten opzichte van het gebruik van twee omvormers van 3 kW. Een omvormer van 6 kW neemt doorgaans twee keer zo veel ruimte in en is twee keer zo duur als een omvormer van 3 kW. Er is dus geen verschil qua ruimte of prijs. Meestal gebruiken we meerdere omvormers omdat er dakhellingen met verschillende hellingsgraden of oriëntatie zijn op één locatie."
+
+  q3: "Hoeveel ruimte neemt het systeem in als het op een plat dak is geïnstalleerd?"
+  a3: "Ongeveer twee keer zo veel ruimte dan dat de panelen zelf innemen. Een systeem van 6 kW beslaat ongeveer 40 m2 paneeloppervlak. Dat betekent ongeveer 80 m2 dakoppervlak."
+
+  q4: "Heeft de omvormer een gelijkstroomschakelaar zodat de stroom van de zonnepanelen kan worden uitgeschakeld?"
+  a4: "Ja, iedere omvormer heeft een ingebouwde gelijkstroomschakelaar."
+
+  q5: "Hoe reageren de zonnecellen op blikseminslag?"
+  a5: "Het systeem kan defect raken als het wordt getroffen door de bliksem, maar dit valt over het algemeen onder de inboedel- en opstalverzekering, net als andere gevallen van blikseminslag."
+
+  q6: "Zijn de panelen bestand tegen bijvoorbeeld zout?"
+  a6: "Ja, de panelen zijn bestand tegen zowel zout als ammoniak."
+
+  q7: "Wat is de maximale afstand tussen het zonnepaneel en de omvormer?"
+  a7: "Er zijn geen echte beperkingen, maar hoe groter de afstand, hoe groter het verlies."
+
+  q8: "Zijn zonnepanelen door mij zelf te monteren?"
+  a8: "Ja, we kunnen u alle materialen hiervoor aanleveren."
+
+  q9: "Is er een belastingvoordeel te verkrijgen als ik zonnepanelen installeer?"
+  a9: "Wij rekenen graag het voordeel uit voor uw specifieke installatie."
+
+  q10: "Hoe wordt zonne-energie elektriciteit voor in huis?"
+  a10: "De met de panelen opgewekte energie wordt via een omvormer geschikt gemaakt voor thuis. Deze omvormer wordt via een stopcontact of in de meterkast op uw elektriciteitsnetwerk thuis aangesloten. Mocht u meer energie opwekken dan nodig dan wordt het overschot terug geleverd op het elektriciteitsnet. Als de zon niet schijnt dan blijft u gebruik maken van uw elektriciteitsnet. Uw meter loopt eenvoudig gezegd vooruit of achteruit en het werkelijke verbruik wordt in rekening gebracht door de elektriciteitsleverancier. In vakjargon noemen ze dit salderen."
+
+  q11: "Moet ik een vergunning indienen voor zonnepanelen?"
+  a11: "Nee. Mocht u echter zonnepanelen willen plaatsen bij een gebouw dat valt onder Monumentenzorg dan moet hiervoor een vergunning worden aangevraagd."
+
+  q12: "Hoeveel zonnepanelen heb ik nodig?"
+  a12: "Dit is afhankelijk van het jaarlijks energieverbruik. Voor een snelle berekening kunt u het jaarlijks energieverbruik in kWh verhogen met 10%. De uitkomst is het totaal aantal Watt aan zonnepalen die u nodig heeft om uw totale energieverbruik af te dekken en de terugverdientijd zo kort mogelijk te houden."
+
+  q13: "Is het plaatsen van zonnepanelen veilig?"
+  a13: "Ja. Al onze producten zijn gecertificeerd, ook op het gebied van veiligheid. Op onze internetpagina treft u een aantal certificaten waaraan onze systemen voldoen."

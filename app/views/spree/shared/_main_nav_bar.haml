@@ -1,0 +1,8 @@
+%nav.columns.sixteen
+  %ul#main-nav-bar.inline{ data: { hook: true } }
+    %li#home-link{ data: { hook: true } }= link_to Spree.t(:home), spree.root_path
+    %li= link_to t(:about), about_path
+    %li= link_to t(:profit), profit_path
+    %li= link_to t('post.many'), posts_path
+    %li= link_to t(:faq), faq_path
+    %li= link_to t('contact.single'), new_contact_path

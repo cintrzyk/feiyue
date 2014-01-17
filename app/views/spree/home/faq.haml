@@ -1,0 +1,9 @@
+= content_for :subheader do
+  %h1.page-title= t('faq')
+
+.row
+  %ol#faq-list
+    - (1..13).each do |count|
+      %li
+        %h3= t("q#{count}")
+        %p.hidden= t("a#{count}")

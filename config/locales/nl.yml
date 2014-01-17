@@ -1,0 +1,49 @@
+nl:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M"
+
+  width: "breedte"
+  height: "hoogte"
+  depth: "diepte"
+  weight: "gewicht"
+
+  profit: "Uw rendement"
+  about: "Over Feiyue"
+  faq: "Vragen"
+
+  welcome: "Welkom bij"
+  actions: "acties"
+  created_at: "gemaakt op"
+  name: "Naam"
+  email: "Email"
+  address: "Adres"
+  phone: "Telefoon"
+  here: "Hier"
+  south: "Zuid"
+  north: "Noord"
+  east: "Oost"
+  west: "West"
+  delete: "verwijderen"
+  are_you_sure: "weet je het zeker?"
+  title: "Titel"
+  description: "Beschrijving"
+  last_edit: "Laatste update"
+  wats: "Watt Piek"
+  wats_cost: "Kostprijs per kWh"
+  years: "jaren"
+  total: "Totaal"
+  payback: "Terugverdientijd:"
+  documentation: "specificatie"
+
+  home:
+    index:
+      item1:
+        title: "Besparen"
+        content_html: "<span class='orange'>Terugverdientijd vanaf 5 jaar!</span> <br> Bespaar 90% op uw elektriciteitsverbruik. <br> Wij maken een gratis offerte op maat met rendementberekening en 3D-visualisatie. <br> Vul daarvoor ons %{contact_link} in. <br> Bent u benieuwd naar wat de installatie u in 25 jaar oplevert? %{profit_link} kunt u uw rendement berekenen."
+      item2:
+        title: "Info"
+        content_html: "<span>ZON = FEIYUE Solar!</span> <br> Met een zonnepanelensysteem van Feiyue Solar bent u verzekerd van een installatie met een hoge kwaliteit. <span class='orange'>25 jaar verzekerde garantie</span> op het rendement en 10 jaar verzekerde fabrieks garantie. Onze producten komen als beste uit de test bij het onafhankelijke Duitse Photon. <br> In de <a href='http://youtu.be/UN-wDknxBec'>film</a> treft u meer informatie over onze werkwijze."

@@ -1,0 +1,15 @@
+@media only screen and (min-width: 968px) {
+  nav #main-nav-bar, nav#top-nav-bar {
+    margin-top: -52px;
+
+    li a { padding-right: 15px; }
+  }
+
+  #header nav.columns.seven {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hidden-phone { display: none; }
+}

@@ -1,0 +1,1 @@
+Feiyue::Application.config.secret_key_base = 'e668c0243f6eda2cac34d7315bdaffa80fda1f28e1d0c4c5d65ca1d152cf2499bc03a56dde1154881e573dc5a8f729655e6702b77339894fec038944468cb660'

@@ -1,0 +1,8 @@
+= content_for :page_title do
+  = t('post.new')
+
+= form_for @post, url: { action: "create" } do |f|
+  = render 'form_fields', f: f
+  %hr
+  = f.submit t('spree.create')
+  = link_to t('spree.cancel'), admin_posts_path

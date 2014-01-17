@@ -1,0 +1,8 @@
+nl:
+  user_mailer:
+    welcome: "Welkom bij Feiyue Solar"
+    confirm_contact_html: <p>Dank u voor het invullen van ons contactformulier en uw interesse in Feiyue Solar. <br> Zon = Feiyue Solar!</p>
+    confirm_contact: "Dank u voor het invullen van ons contactformulier en uw interesse in Feiyue Solar. Zon = Feiyue Solar!"
+    regards_html: <p>Vriendelijke groeten, <br> <a href='http://feiyuesolar.nl'>Feiyue Solar</a></p>
+    regards: "Vriendelijke groeten, Feiyue Solar"
+    response: "We zullen zo snel mogelijk contact met u opnemen over de door u ingevoerde informatie:"

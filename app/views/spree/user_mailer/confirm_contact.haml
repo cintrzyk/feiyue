@@ -1,0 +1,13 @@
+%p.article-title= "#{t('user_mailer.welcome')}, #{@contact.name}!"
+
+= t('user_mailer.confirm_contact_html')
+
+%p.article-title= t('user_mailer.response')
+
+= "#{t('email')}: #{@contact.email}"
+%br
+= "#{t('phone')}: #{@contact.phone}"
+%br
+%br
+%br
+= t('user_mailer.regards_html')

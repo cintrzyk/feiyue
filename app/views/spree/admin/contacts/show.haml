@@ -1,0 +1,23 @@
+= content_for :page_title do
+  = "Contact: #{@contact.name}"
+
+= content_for :page_actions do
+  %li#delete_link
+    = link_to t(:delete), admin_contact_path(@contact), confirm: t(:are_you_sure), method: :delete, class: "button"
+  %li
+    %a#print_contact.button{href: "#"}= t(:print)
+
+#contact_print.row
+  .columns.eight
+    %h3 Gebouw afmetingen
+    = image_tag "building_dim.png", class: "responsive-img"
+    = draw_house_size_table(@sizes)
+
+  .columns.seven
+    = render 'personal_table'
+
+.row
+  %h3= t('contact_question')
+  = simple_format(@contact.question)
+
+= render 'print'

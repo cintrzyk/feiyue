@@ -1,0 +1,26 @@
+nl:
+  profits:
+    title: "Gewenst aantal Watt Piek:"
+    investment_year: "Investeringsjaar:"
+    specific_principles: "Specifieke uitgangspunten:"
+    investment: "Investeringsoverzicht:"
+    estimated: "Geschat maandelijks rendement:"
+    establishment: "Prijsindicatie zonnesysteem:"
+    installation_vat_html: "Zonne-installatie inclusief BTW <span class='underline'>exclusief subsidie</span>:"
+    montage_cost: "Montage/installatie kosten inclusief BTW:"
+    energy: "Energie:"
+    btn: "Vrijblijvende offerte aanvragen"
+    operating_expenses: "Exploitatiekosten:"
+    repair_inverter: "Vervangen/reparatie omvormer in jaar %{year}:"
+    additional_assumptions: "Aanvullende uitgangspunten:"
+    note_1_html: "Berekening is gebaseerd op bedragen d.d. augustus 2013, voor een actuele, en een berekening op maat kunt u eenvoudig contact opnemen via ons %{contact_form}."
+    note_2: "Uitgangspunt is dat het salderen van de totale productie mogelijk is."
+    note_3: "Uitgangspunt afschrijving installatie in 25 jaar, verwachting levensduur is echter 40 jaar."
+    note_4: "Er is geen rekening gehouden met financieringskosten."
+    note_5: "Aan de bovenstaande bedragen en aannames kunnen geen rechten worden ontleend."
+    expected:
+      installation: "Verwachte productie zonne-installatie in kWh per jaar:"
+      production: "Indicatieve daling productie per jaar:"
+      electricity: "Verwachting prijsstijging electriciteit per jaar:"
+      price_increase: "Verwachte algemene prijsstijging:"
+

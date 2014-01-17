@@ -1,0 +1,114 @@
+= content_for :subheader do
+  %h1.page-title= t('contact.title')
+
+= form_for @contact, url: contact_path, html: { :novalidate => '' } do |f|
+  .row
+    .columns.seven
+      %h3= t('contact.sender')
+      %p
+        = f.label :name, t('name')
+        %span.required *
+        %br
+        = f.text_field :name, class: 'required', placeholder: "Feiyue Solar", type: "email"
+      %p
+        = f.label :email, t('email')
+        %span.required *
+        %br
+        = f.email_field :email, class: 'required email', placeholder: "example@feiyuesolar.nl"
+      %p
+        = f.label :phone, t('phone')
+        %span.required *
+        %br
+        = f.text_field :phone, class: 'required', placeholder: "+31794213453".phony_formatted!(format: :international)
+      %p
+        = f.label :address, t('address')
+        %span.required *
+        %br
+        = f.text_field :address, class: 'required', placeholder: "Enschedesestraat 6A 7575 AB Oldenzaal"
+
+    .columns.eight
+      = image_tag "zon-feiyue-410.jpg", class: "responsive-img"
+      %ul#zone-list
+        %li
+          %strong.orange Ervaring
+          en
+          %strong.orange inkoopvoordeel
+          door de realisatie van meer dan 5.000 zonne-installaties in Denemarken, Zweden en  Nederland binnen 2 jaar.
+        %li
+          Zonnepanelen met
+          %strong.orange25 jaar verzekerde garantie
+          op rendement met zonne-energie.
+        %li
+          Onze producten zijn van een
+          %strong.orange goede kwaliteit
+          en zijn veelal als best getest door het Duitse onafhankelijke
+          %strong.orange Photon Laboratory.
+        %li
+          Uw
+          %strong.orange maatschappelijk verantwoorde winstgevende investering
+          met een
+          %strong.orange terugverdientijd vanaf 5 jaar.
+
+  .row
+    %h3
+      = t('contact.building_dim')
+      %small.orange= t('contact.value_in_m')
+  .row
+    .columns.seven
+      = image_tag "building_dim.png", class: "responsive-img"
+    .columns.eight#house-size
+      .row
+        %span A:
+        = f.text_field :asize, type: "number", class: "house-input small-input"
+        .house-slider
+      .row
+        %span B:
+        = f.text_field :bsize, type: "number", class: "house-input small-input"
+        .house-slider
+      .row
+        %span C:
+        = f.text_field :csize, type: "number", class: "house-input small-input"
+        .house-slider
+      .row
+        %span D:
+        = f.text_field :dsize, type: "number", class: "house-input small-input"
+        .house-slider
+      .row
+        %span E:
+        = f.text_field :esize, type: "number", class: "house-input small-input"
+        .house-slider
+
+  .row
+    .columns.seven
+      %h3= t('contact.house_orientation')
+      = f.radio_button "orientation", "south"
+      = label :contact_orientation, t('south').downcase
+      = f.radio_button "orientation", "east"
+      = label :contact_orientation, t('east').downcase
+      = f.radio_button "orientation", "west"
+      = label :contact_orientation, t('west').downcase
+      = f.radio_button "orientation", "north"
+      = label :contact_orientation, t('north').downcase
+
+      %h3= t('contact.installation_size')
+      = f.text_field :size, type: 'number'
+      kWh
+
+      %h3= t('contact.roof')
+      = f.radio_button "roof", "flat"
+      = label :contact_roof, t('contact.flat')
+      %br
+      = f.radio_button "roof", "tiled"
+      = label :contact_roof, t('contact.tiled')
+      %br
+      = f.radio_button "roof", "other"
+      = label :contact_roof, t('contact.other')
+      %hr
+
+    .columns.eight
+      %h3= t('contact.question')
+      %p= f.text_area :question, rows: 9, id: "question_area"
+      %br
+      = f.submit t('contact.submit'), id: 'contact_submit', title: t('contact.submit')
+
+  .row= t('contact.note')

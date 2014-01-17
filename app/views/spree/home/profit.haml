@@ -1,0 +1,102 @@
+= content_for :subheader do
+  %h1.page-title= t('profit')
+
+#profit-settings.row
+  .columns.ten
+    .product-section-title= t('profits.title')
+    .row
+      .columns.nine
+        .minus_wats
+        %span.wats.blue
+        = t('wats')
+        .plus_wats
+        #slider-wats
+
+    .row
+      .columns.five
+        .minus_price
+        %span.price.blue
+        = t('wats_cost')
+        .plus_price
+        #slider-price
+
+      .columns.four
+        .minus_years
+        %span.years.blue
+        = t('years')
+        .plus_years
+        #slider-years
+
+  .columns.four
+    .product-section-title= t('total')
+    #total-donut
+
+.row
+  .product-section-title= t('profits.investment')
+  #bar-chart
+
+  .product-section-title= t('profits.estimated')
+  #line-chart
+
+.row
+  .product-section-title= t('profits.specific_principles')
+  .columns.five
+    %p
+      = t('profits.investment_year')
+      %span.blue= Time.now.year
+  .columns.five
+    %p
+      = t('payback')
+      %span#plus_year.blue
+
+.row
+  .columns.five
+    .product-section-title= t('profits.establishment')
+    %table
+      %tbody
+        %tr
+          %td= t('profits.installation_vat_html')
+          %td#wats_btw.blue
+        %tr
+          %td= t('profits.montage_cost')
+          %td#montage_btw.blue
+
+    #profit_btn= link_to t('profits.btn'), new_contact_path, class: "btn"
+
+  .columns.five
+    .product-section-title= t('profits.energy')
+    %table
+      %tbody
+        %tr
+          %td= t('profits.expected.installation')
+          %td#production_of_installation.blue
+        %tr
+          %td= t('profits.expected.production')
+          %td.blue 0,8%
+        %tr
+          %td= t('profits.expected.electricity')
+          %td.blue 3%
+
+  .columns.five
+    .product-section-title= t('profits.operating_expenses')
+    %table
+      %tbody
+        %tr
+          %td= t('profits.expected.price_increase')
+          %td.blue 3%
+        %tr
+          %td= t('profits.repair_inverter', year: 11)
+          %td.blue €550
+        %tr
+          %td= t('profits.repair_inverter', year: 21)
+          %td.blue €550
+
+.row
+  .product-section-title= t('profits.additional_assumptions')
+  %ul
+    %li= t('profits.note_1_html', contact_form: (link_to t('contact.form'), new_contact_path))
+    %li= t('profits.note_2')
+    %li= t('profits.note_4')
+    %li= t('profits.note_3')
+    %li= t('profits.note_5')
+

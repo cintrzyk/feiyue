@@ -1,0 +1,29 @@
+= content_for :page_title do
+  = @post.title
+
+= content_for :page_actions do
+  %li#posts_link= link_to t('spree.cancel'), admin_posts_path, class: "button"
+
+.row
+  .columns.nine
+    = form_for [:admin, @post], method: :put do |f|
+      = render 'form_fields', f: f
+      %br
+      %br
+      = f.submit t('spree.edit')
+  .columns.six
+    = render 'image_form'
+
+    %h3= @post.images.count > 0 ? t('image.many') : t('image.empty')
+    %table
+      %thead
+        %th= Spree.t(:thumbnail)
+        %th= Spree.t(:alt_text)
+        %th.actions
+      %tbody
+      - @post.images.each do |image|
+        %tr
+          %td= image_tag image.attachment.url(:mini)
+          %td= image.alt.try(:truncate, 25)
+          %td.actions
+            = link_to_delete image, { url: destroy_image_admin_post_url(@post, image), no_text: true }

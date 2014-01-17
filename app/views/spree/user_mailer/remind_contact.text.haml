@@ -1,0 +1,34 @@
+= t('contact.new')
+= "#{t('name')}:  #{@contact.name}"
+= "#{t('email')}:  #{@contact.email}"
+= "#{t('phone')}:  #{@contact.phone}"
+= "#{t('address')}:  #{@contact.address}"
+
+= t('contact.building_dim')
+A:
+= @contact.asize
+B:
+= @contact.bsize
+C:
+= @contact.csize
+D:
+= @contact.dsize
+E:
+= @contact.esize
+
+- if @contact.orientation
+  = t('contact.house_orientation')
+  = @contact.orientation
+
+- if @contact.size
+  = t('contact.installation_size')
+  = @contact.size
+  kWh
+
+- if @contact.roof
+  = t('contact.roof')
+  = @contact.roof
+
+- if @contact.question
+  = t('contact.question')
+  = @contact.question

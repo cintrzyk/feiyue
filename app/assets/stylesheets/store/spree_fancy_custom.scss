@@ -1,0 +1,81 @@
+@import "store/spree_fancy";
+@import "store/variables";
+
+.taxonomy-root {
+  a { color: $c_orange; }
+}
+
+span.field_with_errors {
+  color: $c_red;
+  font-weight: bold;
+}
+
+nav #main-nav-bar {
+  border-bottom: 1px solid #dedede;
+}
+
+.info-text {
+  h4 {
+    margin-top: 15px;
+    color: $body_text_color;
+  }
+  span { color: $c_orange; }
+}
+
+.blue-title {
+  margin: 40px 0;
+  text-align: center !important;
+
+  h3 {
+    color: $c_blue !important;
+    border: none;
+    border-bottom: none !important;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0 20px;
+    width: auto;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .product-image a { border-color: lighten($c_blue, 30) }
+  .bx-pager.bx-default-pager {
+    a.active, a:hover { background-color: $c_blue !important; }
+  }
+
+  .bx-wrapper {
+    margin-top: 40px;
+
+    .bx-controls {
+      bottom: inherit;
+      top: -35px;
+    }
+  }
+
+  hr {
+    position: relative;
+    z-index: 0;
+    margin-top: -15px;
+    border-bottom-width: 2px;
+    border-bottom-color: lighten($c_blue, 30)
+  }
+
+  ul { margin-top: 30px; }
+
+  .product-image {
+    a {
+      @include border-radius(165px);
+      border-width: 2px;
+      width: 160px;
+      height: 160px;
+    }
+
+    img {
+      @include border-radius(45px);
+      width: 160px;
+      height: 160px;
+    }
+  }
+}

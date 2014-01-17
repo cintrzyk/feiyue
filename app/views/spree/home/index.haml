@@ -1,0 +1,55 @@
+= content_for :subheader do
+  = render 'slider'
+
+#welcome-message
+  .container
+    %h1
+      = t(:welcome)
+      = link_to "Feiyue Solar!", root_path
+
+.container
+  .row.blue-title
+    %h3= t('home.index.item2.title')
+    %hr
+    %br
+    .info-text.nine.columns
+      %h4= t('home.index.item2.content_html')
+    .seven.columns
+      .border-radius8.embed-container
+        %iframe{ allowfullscreen: "", frameborder: "0", marginheight: "0", marginwidth: "0", mozallowfullscreen: "", scrolling: "no", webkitallowfullscreen: "", src: "//www.youtube.com/embed/U7h_XgZGQGw" }
+        %br
+
+  .row.blue-title
+    %h3= t('home.index.item1.title')
+    %hr
+    %br
+    .border-radius8.columns.eight
+      .embed-container
+        %iframe{ src: "http://www.slideshare.net/slideshow/embed_code/26491561", frameborder: "0", marginwidth: "0", marginheight: "0", scrolling: "no", style: "border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px",  allowfullscreen: true, webkitallowfullscreen: true, mozallowfullscreen: true }
+    .info-text.eight.columns
+      %h4= t('home.index.item1.content_html', contact_link: (link_to t('contact.form'), new_contact_path), profit_link: (link_to t('here'), profit_path))
+
+  .row.blue-title
+    %h3= t('post.many')
+    %hr
+      - if @posts.count  > 0
+        #post-list
+          - @posts.each do |post|
+            .row
+              .columns.three
+                = link_to cl_image_tag(post.images.first.attachment_url(:post_thumb_small), class: "responsive-img border-radius8 box-shadow-f"), post if post.images.count > 0
+              .columns.twelve
+                %h4= link_to truncate(post.title, length: 75, separator: ' '), post
+                %p= truncate(post.description, length: 190, separator: ' ')
+            %hr
+          / .columns{ class: "#{index%2 ? 'seven' : 'eight'}" }
+          /   .row
+          /     .columns.two= link_to cl_image_tag(post.images.first.attachment_url(:post_thumb_small), class: "responsive-img border-radius8 box-shadow-f", alt: post.title), post if post.images.any?
+
+          /     .columns{ class: "#{index%2 ? 'four' : 'five'}", name: 'cols' }
+          /       %h4.orange= link_to truncate(post.title, length: 55, separator: ' '), post
+          /   %p= truncate(post.description, length: 180, separator: ' ')
+
+        = link_to t('post.all'), posts_path, class: "pull-right"
+      - else
+        %p= t('post.empty')

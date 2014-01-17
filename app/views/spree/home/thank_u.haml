@@ -1,0 +1,18 @@
+= content_for :subheader do
+  %h1.page-title= t('contact.title')
+
+.row
+  .success
+    %p
+      Hartelijk dank voor uw vraag heer, mevrouw,
+      %span.orange= @contact.name
+      %br
+      %br
+      Uw gegevens zijn naar ons verzonden en worden in behandeling genomen.
+      %br
+      Wij nemen hierover snel contact met u op via de onderstaande contactgegevens.
+      %br
+      %br
+      = @contact.email
+      %br
+      = @contact.phone

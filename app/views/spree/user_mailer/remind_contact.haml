@@ -1,0 +1,40 @@
+%p.article-title= t('contact.new')
+= "#{t('name')}: #{@contact.name}"
+%br
+= "#{t('email')}:  #{@contact.email}"
+%br
+= "#{t('phone')}:  #{@contact.phone}"
+%br
+= "#{t('address')}: #{@contact.address}"
+
+%p= t('contact.building_dim')
+A:
+= @contact.asize
+%br
+B:
+= @contact.bsize
+%br
+C:
+= @contact.csize
+%br
+D:
+= @contact.dsize
+%br
+E:
+= @contact.esize
+
+- if @contact.orientation
+  %p= t('contact.house_orientation')
+  = @contact.orientation
+
+- if @contact.size
+  %p= t('contact.installation_size')
+  = @contact.size
+
+- if @contact.roof
+  %p= t('contact.roof')
+  = @contact.roof
+
+- if @contact.question
+  %p= t('contact.question')
+  = @contact.question

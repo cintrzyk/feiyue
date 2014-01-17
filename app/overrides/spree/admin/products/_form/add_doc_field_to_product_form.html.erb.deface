@@ -1,0 +1,6 @@
+<!-- insert_bottom 'div[data-hook="admin_product_form_left"]' -->
+<%= f.field_container :doc do %>
+  <%= f.label :doc, t('documentation') %>
+  <%= f.file_field :doc %>
+  <%= f.error_message_on :doc %>
+<% end %>

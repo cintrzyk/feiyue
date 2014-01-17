@@ -1,0 +1,9 @@
+.DS_Store
+/.bundle
+/tmp
+.powenv
+config/database.yml
+/.sass-cache/
+/log/*.log*
+*.swp
+public/uploads/*

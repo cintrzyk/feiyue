@@ -1,0 +1,26 @@
+= content_for :subheader do
+  %h1.page-title= @post.title
+
+#news_sgallery.sgallery
+  %ul.items--small
+    - @post.images.each do |foto|
+      %li.item= link_to cl_image_tag(foto.attachment_url(:standard)), "#"
+  %ul.items--big
+    - @post.images.each do |foto|
+      %li.item--big
+        %a{ href: "#" }
+          %figure
+            = cl_image_tag foto.attachment_url(:big)
+            %figcaption.img-caption= foto.alt
+
+  .controls
+    %span.control.icon-arrow-left{ data: { direction: "previous" } }
+    %span.control.icon-arrow-right{ data: { direction: "next" } }
+    %span.grid.icon-grid
+    %span.fs-toggle.icon-fullscreen
+
+%hr
+
+%div
+  %h2.orange= t('description')
+  = simple_format(@post.description)
