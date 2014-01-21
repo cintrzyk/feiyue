@@ -5,10 +5,6 @@ class CloudinaryUploader < CarrierWave::Uploader::Base
   # Spree looks in attachment#errors, so just delegate to model#errors
   delegate :errors, to: :model
 
-  # def public_id
-  #   (model.try(:viewable).try(:product).try(:name) || model.try(:viewable).try(:title)) || "file"
-  # end
-
   # Match the path defined in Spree::Image
   def paperclip_path
     "assets/products/:id/:style/:basename.:extension"
