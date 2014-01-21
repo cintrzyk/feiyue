@@ -1,5 +1,4 @@
 class Spree::Post < ActiveRecord::Base
-  # has_many :images, as: :imageable, dependent: :destroy, class_name: "Spree::Image"
   has_many :images, as: :viewable, dependent: :destroy, class_name: "Spree::Image"
 
   scope :recents, -> { order("created_at DESC").limit(2) }

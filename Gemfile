@@ -9,6 +9,7 @@ gem 'cloudinary'
 gem 'phony_rails'
 gem 'rails-backbone'
 gem 'js-routes'
+gem 'rollbar'
 
 # spree
 gem 'spree', github: 'spree/spree', branch: '2-1-stable'
