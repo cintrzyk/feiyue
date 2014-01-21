@@ -128,7 +128,7 @@ class Feiyue.Views.HomeProfit extends Backbone.View
       if (valid_price(user_price) && valid_wats(user_wats) && after_years > 0 && after_years < 31)
         current_year = parseInt(new Date().getFullYear(), 10)
         montage_cost = user_wats * 0.41
-        start_loan = - user_wats * 1.47 - montage_cost #installation cost
+        start_loan = - user_wats * 1.47 # - montage_cost
         production_year_decline = 0.008
         interest_rate_loan = 0.03
         year_price_increase = 0.03
