@@ -6,7 +6,13 @@
         <% product_row.each do |product| %>
           <li id="product_<%= product.id %>" class="columns four <%= cycle("alpha", "secondary", "omega secondary", name: "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
             <div class="product-image">
-              <%= link_to cl_image_tag(product.images.first.attachment, format: "jpg", width: 150, height: 150, alt: product.images.first.alt, crop: :fit), product, itemprop: 'url' %>
+              <%= link_to product, itemprop: 'url' do %>
+                <% if product.images.first.try(:attachment) %>
+                  <%= cl_image_tag(product.images.first.attachment, format: "jpg", width: 150, height: 150, alt: product.images.first.alt, crop: :fit) %>
+                <% else %>
+                  <%= image_tag 'store/logo.png', width: 150, height: 150 %>
+                <% end %>
+              <% end %>
             </div>
             <%= link_to product, class: 'info', itemprop: "name", title: product.name do %>
               <strong><%= truncate(product.name, length: 50) %></strong>
