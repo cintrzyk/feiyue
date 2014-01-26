@@ -6,6 +6,14 @@ nl:
     formats:
       default: "%d/%m/%Y %H:%M"
 
+  views:
+    pagination:
+      first: "« Eerste"
+      previous: "‹ Vorige"
+      truncate: "..."
+      next: "Volgende ›"
+      last: "Laatste »"
+
   width: "breedte"
   height: "hoogte"
   depth: "diepte"
