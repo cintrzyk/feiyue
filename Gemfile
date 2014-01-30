@@ -19,7 +19,6 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 
 # assets
 gem 'sass-rails', '~> 4.0.0'
-gem 'font-awesome-sass'
 gem 'haml-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
