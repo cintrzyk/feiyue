@@ -7,3 +7,4 @@ config/database.yml
 /log/*.log*
 *.swp
 public/uploads/*
+public/assets/*
