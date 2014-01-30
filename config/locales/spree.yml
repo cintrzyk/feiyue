@@ -2,3 +2,5 @@ nl:
   spree:
     shop: "Producten"
     option_type_placeholder: "kiest u een optie"
+    api:
+      key: "API KEY"
