@@ -31,7 +31,7 @@ class Feiyue.Views.ProductsShow extends Backbone.View
         url: Routes.spree_ask_price_path(@product_id, @$('#amount-price').val(), @email_input.val()),
         type: 'POST'
 
-      @$('.send-for-price').after("<span class='blue pull-right'>Wij geven u merkt al snel.</span>")
+      @$('.send-for-price').after("<span class='blue pull-right'>U ontvangt snel een reactie van ons</span>")
       @$('.send-for-price').hide()
     else
       alert "Email is not valid"
