@@ -8,6 +8,10 @@
 .pull-left { float: left; }
 .center { text-align: center; }
 
+span.field_with_errors {
+  textarea { border: solid $c_red; }
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%; /* 16/9 ratio */

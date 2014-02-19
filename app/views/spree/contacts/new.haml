@@ -109,7 +109,9 @@
 
     .columns.eight
       %h3= t('contact.question')
-      %p= f.text_area :question, rows: 9, id: "question_area"
+      %p
+        = f.text_area :question, rows: 9, id: "question_area"
+        %span.required *
       %br
       = f.submit t('contact.submit'), id: 'contact_submit', title: t('contact.submit')
 

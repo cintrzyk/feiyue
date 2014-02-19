@@ -7,16 +7,9 @@ class Spree::Contact < ActiveRecord::Base
 
   validates :orientation, inclusion: { in: %w(south north west east) }, allow_blank: true
   validates :roof, inclusion: { in: %w(flat tiled other) }, allow_blank: true
-
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i }, presence: true
-
-  validates :name, presence: true
-  validates :address, presence: true
-  validates :asize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
-  validates :bsize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
-  validates :csize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
-  validates :dsize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
-  validates :esize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
+  validates :name, :address, :question, presence: true
+  validates :asize, :bsize, :csize, :dsize, :esize, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 80 }
   validates :size, numericality: { greater_than_or_equal_to: 1000, less_than_or_equal_to: 15000, only_integer: true }
 
   private
