@@ -17,12 +17,10 @@
         = f.email_field :email, class: 'required email', placeholder: "example@feiyuesolar.nl"
       %p
         = f.label :phone, t('phone')
-        %span.required *
         %br
         = f.text_field :phone, class: 'required', placeholder: "+31794213453".phony_formatted!(format: :international)
       %p
         = f.label :address, t('address')
-        %span.required *
         %br
         = f.text_field :address, class: 'required', placeholder: "Enschedesestraat 6A 7575 AB Oldenzaal"
 
@@ -49,7 +47,9 @@
           met een
           %strong.orange terugverdientijd vanaf 5 jaar.
 
-      %small * is verplicht voor een reactie
+      %small
+        %span.required *
+        is verplicht voor een reactie
 
   .row
     %h3
@@ -81,38 +81,35 @@
         .house-slider
 
   .row
-    .columns.seven
-      %h3= t('contact.house_orientation')
-      = f.radio_button "orientation", "south"
-      = label :contact_orientation, t('south').downcase
-      = f.radio_button "orientation", "east"
-      = label :contact_orientation, t('east').downcase
-      = f.radio_button "orientation", "west"
-      = label :contact_orientation, t('west').downcase
-      = f.radio_button "orientation", "north"
-      = label :contact_orientation, t('north').downcase
-
-      %h3= t('contact.installation_size')
-      = f.text_field :size, type: 'number'
-      kWh
-
+    .columns.nine
       %h3= t('contact.roof')
       = f.radio_button "roof", "flat"
       = label :contact_roof, t('contact.flat')
-      %br
       = f.radio_button "roof", "tiled"
       = label :contact_roof, t('contact.tiled')
-      %br
       = f.radio_button "roof", "other"
       = label :contact_roof, t('contact.other')
-      %hr
 
-    .columns.eight
-      %h3= t('contact.question')
+      %h3= t('contact.installation_size')
       %p
-        = f.text_area :question, rows: 9, id: "question_area"
-        %span.required *
-      %br
-      = f.submit t('contact.submit'), id: 'contact_submit', title: t('contact.submit')
+        = f.text_field :size, type: 'number'
+        kWh
 
-  .row= t('contact.note')
+    .columns.six
+      %h3= t('contact.house_orientation')
+      = f.radio_button "orientation", "south"
+      = label :contact_orientation, t('south').downcase
+      %br
+      = f.radio_button "orientation", "east"
+      = label :contact_orientation, t('east').downcase
+      %br
+      = f.radio_button "orientation", "west"
+      = label :contact_orientation, t('west').downcase
+      %br
+      = f.radio_button "orientation", "north"
+      = label :contact_orientation, t('north').downcase
+  .row
+    .center= t('contact.note')
+  .row
+    .center= f.submit t('contact.submit'), id: 'contact_submit', title: t('contact.submit')
+
