@@ -1,9 +1,9 @@
 nl:
   post:
-    all: "Meer nieuws"
+    all: "Meer referenties"
     new: "Nieuw bericht"
     empty: "Geen berichten"
-    many: "Nieuws"
+    many: "Referenties"
 
     notices:
       created: "Nieuws wordt gemaakt"
