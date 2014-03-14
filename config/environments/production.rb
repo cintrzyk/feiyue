@@ -8,7 +8,7 @@ Feiyue::Application.configure do
   config.assets.compile = false
   config.assets.digest = true
   config.assets.version = '1.0'
-  config.assets.precompile += %w( icons.svg icons.ttf icons.eot icons.woff )
+  config.assets.precompile += %w( icons.svg icons.ttf icons.eot icons.woff images/bx_loader.gif )
   config.log_level = :info
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
