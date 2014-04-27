@@ -7,8 +7,7 @@ gem 'pg'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'phony_rails'
-gem 'rails-backbone'
-gem 'js-routes'
+gem 'js_stack'
 gem 'rollbar'
 
 # spree
