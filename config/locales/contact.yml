@@ -18,6 +18,7 @@ nl:
     other: "Anders"
     submit: "Verzenden"
     new: "Nieuw contact"
+    your_question: Uw vraag
 
     notices:
       success: "Dank u voor het verzenden naar ons bericht!"
