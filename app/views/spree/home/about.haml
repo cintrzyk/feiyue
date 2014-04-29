@@ -29,16 +29,23 @@
       %li
         Onze producten zijn van een
         %strong.orange goede kwaliteit
-        en zijn veelal als best getest door het Duitse onafhankelijke
+        en zijn veelal
+        %strong.orange als best getest
+        door het Duitse onafhankelijke
         %strong.orange Photon Laboratory.
       %li
         Uw
         %strong.orange maatschappelijk verantwoorde winstgevende investering
         met een
         %strong.orange terugverdientijd vanaf 5 jaar.
-      %br
-      .pull-right= link_to "Zie ook onze referenties.", posts_path
+.row
+  .columns.five
+    = link_to posts_path do
+      .center
+        = image_tag 'solar_roof.jpg', width: 250, class: 'border-radius8 box-shadow-f'
+        %div= link_to "Zie ook onze referenties.", posts_path
 
+  .columns.ten
     %h3#over= t('about')
     = t('about_page.over.content1_html')
     = t('about_page.over.content2_html')
