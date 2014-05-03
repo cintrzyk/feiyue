@@ -4,7 +4,7 @@ set :application, 'feiyue'
 set :repo_url, 'git@github.com:cintrzyk/feiyue.git'
 
 set :rbenv_custom_path, '/usr/local/rbenv'
-set :rbenv_ruby, '2.0.0-p247'
+set :rbenv_ruby, '2.1.1'
 
 set :pty, true
 set :sudo_prompt, ""
