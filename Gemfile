@@ -37,6 +37,7 @@ end
 
 group :staging do
   gem 'unicorn'
+  gem 'dotenv-deployment'
 end
 
 group :production do

@@ -12,6 +12,7 @@ set :linked_files, %w{
   config/database.yml
   config/unicorn.rb
   config/unicorn_init.sh
+  .env
 }
 set :linked_dirs, %w{ tmp/pids log }
 set :scm, :git
