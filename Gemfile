@@ -9,6 +9,7 @@ gem 'cloudinary'
 gem 'phony_rails'
 gem 'js_stack'
 gem 'rollbar'
+gem 'dotenv-deployment'
 
 # spree
 gem 'spree', github: 'spree/spree', branch: '2-1-stable'
@@ -37,7 +38,6 @@ end
 
 group :staging do
   gem 'unicorn'
-  gem 'dotenv-deployment'
 end
 
 group :production do
