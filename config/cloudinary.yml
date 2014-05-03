@@ -13,10 +13,8 @@ development:
 
 staging:
   <<: *default
-  enhance_image_tag: true
   static_image_support: true
 
 production:
   <<: *default
-  enhance_image_tag: true
   static_image_support: true
