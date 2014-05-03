@@ -26,10 +26,17 @@ gem 'jquery-rails'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv', '~> 2.0'
 end
 
 group :development, :test do
   gem 'jazz_hands'
+end
+
+group :staging do
+  gem 'unicorn'
 end
 
 group :production do
