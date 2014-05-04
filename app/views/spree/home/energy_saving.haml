@@ -1,0 +1,167 @@
+= content_for :subheader do
+  %h1.page-title= t('energy_saving')
+
+.row
+  .columns.eight
+    Zonnepanelen worden ook wel zonnecellen of PV-cellen (photovoltaic cells) genoemd. Het zijn de blauwe of zwarte panelen die energie uit zonlicht omzetten in elektrische energie. Zonnepanelen zijn er in allerlei schaalgroottes en toepassingen, bijvoorbeeld bij parkeermeters en matrixborden langs de weg. Wij gaan in op het gebruik van zonnepanelen als particuliere stroomvoorziening op woningen.
+  .columns.seven
+    %ul
+      %li= link_to 'Hoe zonnepanelen werken', '#1'
+      %li= link_to 'Stroom teruggeven', '#2'
+      %li= link_to 'Energieopbrengst van zonnepanelen', '#3'
+      %li= link_to 'Subsidie op zonnepanelen', '#4'
+      %li= link_to 'Op eigen dak of niet?', '#5'
+      %li= link_to 'Dak geschikt?', '#6'
+      %li= link_to 'Optimale plaatsing van de panelen', '#7'
+      %li= link_to 'Benodigde ruimte voor zonnepanelen', '#8'
+      %li= link_to 'Vergunningen voor zonnepanelen nodig?', '#9'
+      %li= link_to 'Zonnepanelen installeren', '#10'
+      %li= link_to 'Geschikte energiemeter nodig', '#11'
+
+.row
+  %h3#1 Hoe zonnepanelen werken
+  .columns.eight
+    .center
+      = image_tag 'energy/house.jpg'
+  %p Zonnepanelen bestaan uit siliciumplaten die licht omzetten in elektrische stroom. Door gebruik van halfgeleiders ontstaat een gelijkspanning van ongeveer 0,5 volt. Door verschillende cellen met elkaar te verbinden, wordt de spanning opgevoerd tot zo'n 24 volt. Een omvormer zorgt er voor dat dit wordt omgevormd naar 230 volt wisselstroom. (Bron illustratie: Milieudienst IJmond) .
+.row
+  %h3#2
+    Stroom teruggeven
+    = to_top
+  %p Alle opgewekte zonnestroom gaat via een stekker tussen de omvormer en het stopcontact naar het elektriciteitsnet. De stroom die je niet verbruikt, wordt teruggegeven aan het elektriciteitsnet. De elektriciteitsmeter loopt dan dus terug. Op deze manier gaat de opgewekte zonnestroom nooit verloren, kun je extra besparen op je stroomrekening en hoef je met zonnepanelen nooit bang te zijn om zonder stroom komen te zitten als het bewolkt of donker is.
+
+.row
+  %h3#3
+    Energieopbrengst van zonnepanelen
+    = to_top
+  %p
+    Het vermogen van zonnepanelen (PV) wordt uitgedrukt in watt-piek (Wp). Dat is het piekvermogen dat bij optimale zoninstraling - dus recht onder de zon bij helder weer midden op de dag - zou kunnen worden opgewekt. Na nieuw
+    = link_to 'onderzoek van de Universiteit Utrecht', 'http://pers.uu.nl/nederlandse-zonnepanelen-opbrengst-kengetal'
+    gaat de overheid er nu (maart 2014) van uit dat in de Nederlandse praktijk de jaaropbrengst van een PV-systeem gemiddeld 875 kWh per kWp bedraagt. De populairste zonnepanelen hebben een piekvermogen van zo'n 250 Wp. Per stuk leveren deze zonnepanelen dus zo'n 220 kWh aan energie per jaar.
+
+.row
+  %h3#4
+    Subsidie op zonnepanelen
+    = to_top
+  %p
+    Sommige gemeenten en provincies geven
+    = link_to 'subsidie op zonnepanelen.', 'http://www.consumentenbond.nl/energie/extra/subsidies-op-zonnepanelen-en-zonneboilers/'
+    Kijk op
+    = link_to 'www.energiesubsidiewijzer.nl', 'http://www.energiesubsidiewijzer.nl/'
+    om te zien of dat voor jouw gemeente of provincie ook geldt.
+  %p
+    De rijksoverheid gaf van 2 juli 2012 tot 8 augustus 2013 ook subsidie. Het hiervoor beschikbare budget is nu op.
+
+.row
+  %h3#5
+    Op eigen dak of niet?
+    = to_top
+  %p
+    Wie een eigen dak heeft, kan hierop zonnepanelen plaatsen.
+    %br
+    Wie zijn dak deelt, bijvoorbeeld omdat hij in een appartementencomplex woont, kan met de Vereniging van Eigenaren (VVE) zonnepanelen plaatsen. Met een
+    = link_to 'stroomverdeler', 'http://www.consumentenbond.nl/test/woning-huishouden/woning/duurzaam-consumeren/nieuws/2013/stroomverdeler-maakt-zonnepanelen-interessant-voor-vves/'
+    kan een VVE de maximale (financiële) opbrengst uit de zonnepanelen halen
+    %br
+    Een andere mogelijkheid is deelnemen in een coöperatie die gezamenlijk zonnepanelen heeft op het dak van bijvoorbeeld een school of sporthal. Het
+    = link_to 'belastingnadeel', 'http://www.consumentenbond.nl/energie/nieuws/2013/gezamenlijk-stroom-opwekken-aantrekkelijker/'
+    dat deze constructie had is per 1 januari 2014 niet meer van toepassing.
+
+.row
+  %h3#6
+    Dak geschikt?
+    = to_top
+  %p
+    Eerst moet je weten of je dak geschikt is voor zonnepanelen. Heeft je dak de juiste ligging ten opzichte van de zon, hoe is de hoek van het dak, hoe groot is het dak, is er schaduw?
+  %p
+    Er zijn modules op internet waarmee je daar een eerste idee over kunt krijgen:
+    %ul
+      %li
+        = link_to 'Advies op maat', 'http://adviesopmaat.milieucentraal.nl/MC-AoM2/MC_AoM/kb_Zonnepanelen?init=true'
+        \- Milieu Centraal (onafhankelijke informatie over milieu en energie).
+      %li
+        = link_to 'Greenem', 'http://www.greenem.nl/zonnepanelen'
+        (zonnepanelenvergelijker; geeft een lijst met aanbieders van zonnepanelen).
+      %li
+        = link_to 'Comparemysolar', 'http://www.comparemysolar.nl/'
+        (zonnepanelenvergelijker; geeft een lijst met aanbieders van zonnepanelen).
+      %li
+        = link_to 'Zonatlas', 'http://www.zonatlas.nl/home/'
+        \- Klimaatverbond Nederland (lokale overheden die samenwerken op het gebied van klimaatbeleid).
+      %li Ook sommige aanbieders van zonnepanelen, zoals collectieve inkoopacties en energieleveranciers, hebben modules op hun site.
+
+    Het overzicht is niet uitputtend en we hebben de modules niet uitgebreid onderzocht. Wel zagen we dat je met het invoeren van dezelfde gegevens verschillende uitkomsten kunt krijgen. We raden daarom aan om er een paar in te vullen en de uitkomsten met elkaar te vergelijken. En vervolgens een installateur of zonnepanelenaanbieder de situatie ter plekke te laten bekijken.
+    %br
+    Enkele van de bovengenoemde sites geven lijsten met aanbieders van zonnepanelen. Wij kunnen geen uitspraak doen over de juistheid van de gegeven aanbiedersinformatie en de kwaliteit van de genoemde aanbieders. Zie hieronder meer informatie over het kopen van zonnepanelen.
+
+.row
+  %h3#7
+    Optimale plaatsing van de panelen
+    = to_top
+  %p De zonnepanelen moeten zodanig worden gericht dat ze zoveel en zolang mogelijk zonlicht opvangen. Daarbij moet je rekening houden met de bewegingen van de zon gedurende een etmaal en met de stand van de zon door de seizoenen heen: in de winter staat de zon veel lager dan in de zomer.
+  %p De hellingshoek van de panelen is daarom van belang. Een opstelling in een hoek van 36° ten opzichte van het horizontale vlak en zoveel mogelijk richting het zuiden is voor de totale jaaropbrengst optimaal. Een opstelling met een veel steilere hoek (let dus op extreem schuine daken!) of veel meer op het westen of oosten gericht, kan tot 15% minder rendement opbrengen. Zonnepanelen installeren op een dak dat op het noorden gericht is moet worden afgeraden.
+  %p
+    Ook het gemiddeld aantal zonuren - eigenlijk: de totale jaarlijkse zoninstraling - op de plek waar de woning staat is van enig belang voor de opbrengst. Dit ligt in Nederland in het noorden en westen wat hoger dan in het oosten en zuiden van het land. Maar verreweg het belangrijkst, naast de windrichting van plaatsing, is dat de zonnepanelen met name in de zomer zo min mogelijk in de schaduw moeten liggen.
+    = image_tag 'energy/panel.jpg', class: 'pull-right'
+    Bij daken waar grotendeels schaduwvrije plaatsing van alle panelen niet mogelijk is, is het een goed idee om bij aanbieders te informeren naar de mogelijkheden met zogenaamde micro-omvormers. Bij systemen met micro-omvormers wordt elk zonnepaneel apart aangestuurd. Tijdelijke schaduw op een of enkele panelen verlaagt daardoor niet meteen ook de opbrengst van alle andere panelen.
+
+.row
+  %h3#8
+    Benodigde ruimte voor zonnepanelen
+    = to_top
+  %p Op een schuin dak kunnen zonnepanelen tegen elkaar aan worden gelegd, wat betekent dat een vierkante meter zonnepaneel ook ongeveer een vierkante meter schuin dak in beslag neemt. Bij een plat dak moet er wat ruimte tussen de zonnepanelen in zitten om te voorkomen dat de zonnepanelen in elkaars schaduw komen te liggen. Hierdoor heb je op een plat dak meer ruimte nodig dan op een schuin dak. Reken per vierkante meter paneel ongeveer 2,5 vierkante meter dak.
+
+.row
+  %h3#9
+    Vergunningen voor zonnepanelen nodig?
+    = to_top
+  %p
+    Met de huidige
+    = link_to 'Woningwet', 'http://wetten.overheid.nl/BWBR0005181/geldigheidsdatum_02-09-2013'
+    is het vaak niet nodig om voor zonnepanelen of zonnecollectoren een bouwvergunning - tegenwoordig heet dat een omgevingsvergunning - aan te vragen, zolang de installatie aan een paar voorwaarden voldoet. Op een rijksmonument of in een beschermd dorps- of stadsgezicht mogen geen zonnepanelen worden geplaatst. De gemeente kan je vertellen of er voor jouw woning bijzondere voorwaarden gelden.
+
+.row
+  %h3#10
+    Zonnepanelen installeren
+    = to_top
+  %p
+    De meeste consumenten laten zonnepanelen door een vakman installeren. Sinds medio 2013 bestaat er een keurmerk voor installateurs van zonnepanelen:
+    = link_to 'Zonnekeur-installateur.', 'http://www.zonnekeur.com/'
+    Er zijn nog niet zoveel installateurs met het keurmerk. Hopelijk neemt het aantal snel toe in 2014.
+    Je kunt zonnepanelen ook zelf installeren. Er zijn zelfinstallatiepakketten verkrijgbaar waarin al het benodigde materiaal zit. Ook als je de installatie niet zelf uitvoert, is het raadzaam om voor de aanschaf na te denken over de installatie:
+    %ul
+      %li waar moeten de panelen komen te liggen;
+      %li hoeveel zonnepanelen passen er op de beschikbare ruimte;
+      %li hoe gaat de installatie eruit zien van het dak tot aan binnenshuis?
+    Voor huishoudelijk gebruik is al gauw een installatie met meer dan 600 Watt piekvermogen gewenst (3 panelen of meer). Hiervoor moet vaak een aparte groep in de meterkast worden geïnstalleerd. Dit moet door een elektriciën gebeuren.
+
+.row
+  %h3#11
+    Geschikte energiemeter nodig
+    = to_top
+  %p
+    De meter in je meterkast moet kunnen
+    = link_to 'salderen.', 'http://www.consumentenbond.nl/energie/extra/Verdienen-aan-zelf-opgewekte-stroom/'
+    Als dat niet het geval is, heb je alleen profijt van je zonnepanelen voor de stroom die je direct gebruikt. Alle teruggeleverde stroom doe je dan cadeau aan de energieleverancier. Het is dus belangrijk om na te gaan of je een goede energiemeter hebt. Geschikt zijn:
+    %ul
+      %li een analoge meter met een wieltje (Ferrarismeter) dat ook terug kan lopen (salderen);
+      %li een digitale meter met gescheiden telwerken voor afgenomen en teruggeleverde stroom. Dit kan een 'slimme' meter zijn, maar dat hoeft niet.
+    De meters kunnen er als volgt uitzien (maar let op: er zijn per type verschillende modellen in omloop):
+    %figure.center
+      = image_tag 'energy/ferrarismeter.jpg'
+      = image_tag 'energy/digitale_meter.jpg'
+      = image_tag 'energy/slimme_meter.jpg'
+      %figcaption
+        Ferrarismeter
+        | Digitale meter die 'terugleveren' en 'afnemen' apart registreert
+        | Slimme meter
+
+  %p Verwacht je in een jaar per saldo meer te gaan opwekken dan je gebruikt, dan is een meter van de laatste categorie de beste optie. De andere meters kunnen namelijk problemen opleveren bij het verrekenen.
+  %p Als je twijfelt over je meter, kun je het best contact opnemen met de netbeheerder. Maar wees alert: de netbeheerder zegt misschien dat je een slimme meter nodig hebt, terwijl dit niet het geval is. Als je 'ouderwetse' Ferrarismeter terugloopt en je per saldo niet meer gaat opwekken dan je verbruikt, dan is deze prima. Je mag een slimme meter weigeren.
+  %p Het is altijd verstandig - om problemen te voorkomen - om zowel je energieleverancier als je netbeheerder te informeren dat je stroom gaat terugleveren op het moment dat je zonnepanelen installeert.
+  %p Toen er SDE-subsidie was moest je ook een 'bruto-productiemeter' hebben, om over alle geproduceerde stroom subsidie te krijgen. Deze meter registreert ook de stroom die je opwekt maar meteen zelf verbruikt. Voor salderen is zo'n meter niet nodig. Als je precies wilt weten wat de opbrengst van je panelen is wel.
+  %p Het plaatsen van een bruto-productiemeter kost zo'n €100. Daarnaast betaal je ongeveer €30 per jaar aan meterhuur aan de netbeheerder. Er zijn ook andere monitoringssystemen die de opbrengst van je zonnepanelen bijhouden, zonder jaarlijks huurbedrag. Vraag hiernaar bij de installateur.
+  %p
+    Op de website van
+    = link_to 'Milieu Centraal', 'http://www.milieucentraal.nl/zonnepanelen'
+    staat meer informatie over het kiezen en plaatsen van zonnepanelen.

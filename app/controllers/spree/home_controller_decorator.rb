@@ -11,6 +11,9 @@ Spree::HomeController.class_eval do
   def about
   end
 
+  def energy_saving
+  end
+
   def thank_u
     @contact = Spree::Contact.last
     # if /\/contact/.match(request.referrer)

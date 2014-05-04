@@ -12,6 +12,7 @@ Feiyue::Application.routes.draw do
     get 'about', to: 'home#about', as: :about
     get 'faq', to: 'home#faq', as: :faq
     get 'thank_u', to: 'home#thank_u', as: :thank_u
+    get 'energy_saving', to: 'home#energy_saving', as: :energy_saving
 
     namespace :admin do
       resources :posts do
