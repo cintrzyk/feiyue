@@ -11,5 +11,11 @@ window.Feiyue =
 jQuery ->
   Feiyue.init()
 
-  $(".to-top").click ->
+  $('.to-top').click ->
     $("html, body").animate({ scrollTop: 0 }, "slow")
+
+
+  $('.hover-dropdown').hover ->
+    $('ul.hover-dropdown-menu').slideDown 'fast'
+  , ->
+    $('ul.hover-dropdown-menu').slideUp 'fast'

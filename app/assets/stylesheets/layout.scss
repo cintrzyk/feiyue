@@ -85,4 +85,82 @@ body {
     margin-bottom: 30px;
     cursor: pointer;
   }
+
+  ul#main-nav-bar {
+    li {
+      a {
+        padding: 6px 8px !important;
+      }
+
+      .arrow-down {
+        float: right;
+        position: relative;
+        top: 10px;
+        left: -4px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #00adee;
+      }
+
+      &:hover {
+        a {
+          color: white !important;
+        }
+
+        .arrow-down {
+          border-top: 5px solid white;
+        }
+
+        background-color: #00adee;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+
+        &.hover-dropdown {
+          -webkit-border-bottom-left-radius: 0px;
+          -webkit-border-bottom-right-radius: 0px;
+          -moz-border-radius-bottomleft: 0px;
+          -moz-border-radius-bottomright: 0px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+      }
+    }
+  }
+
+  .hover-dropdown-menu {
+    display: none;
+    position: absolute;
+
+    li {
+      z-index: 999;
+      background-color: #00adee;
+      position: relative;
+      display: block;
+      text-align: left;
+
+      &:hover {
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
+      }
+
+      a {
+        border: 1px dotted white;
+        font-size: 0.8em !important;
+        color:#FFFFFF;
+        text-decoration:none;
+        padding:10px;
+        display:block;
+
+        &:hover {
+          padding:10px;
+          font-weight:bold;
+          background-color: #5FC6ED;
+        }
+      }
+    }
+  }
 }
