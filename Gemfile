@@ -9,7 +9,7 @@ gem 'cloudinary'
 gem 'phony_rails'
 gem 'js_stack'
 gem 'rollbar'
-gem 'dotenv-deployment'
+gem 'figaro'
 
 # spree
 gem 'spree', github: 'spree/spree', branch: '2-1-stable'

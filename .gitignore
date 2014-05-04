@@ -3,6 +3,7 @@
 /tmp
 .powenv
 config/database.yml
+config/application.yml
 /.sass-cache/
 /log/*.log*
 *.swp
