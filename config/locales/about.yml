@@ -6,15 +6,17 @@ nl:
     montage:
       title: "Montage"
       installation_team: "Installatieteam"
-      content1_html: <p>Als u een zonnepanelensysteem inclusief montage aanschaft, komt een montageploeg samen met een elektricien het systeem bij u installeren. Wij zorgen dat onze technici voldoende ervaring hebben en dat ze de installatie op verantwoorde wijze uitvoeren, in overeenstemming met de geldende wet en regelgeving. Feiyue Solar streeft altijd naar de beste kwaliteit.</p>
+      content1_html: <p>Als u een zonnepanelensysteem inclusief montage aanschaft, komt een montageploeg samen met een elektricien het systeem bij u installeren. Wij zorgen dat onze technici voldoende ervaring hebben en dat ze de installatie op verantwoorde wijze uitvoeren, in overeenstemming met de geldende wet en regelgeving. ZONIS Feiyue Solar streeft altijd naar de beste kwaliteit.</p>
       schletter: "Montagesysteem"
-      content3_html: <p>Feiyue Solar werkt met het Duitse Schletter montage systeem. Schletter is wereldmarktleider op het gebied van zonnepanelen montage systemen. Het bedrijf bestaat sinds 1968 en is sinds 2001 actief in solar bevestigingsmateriaal. Het zeer uitgebreide assortiment, met 10 jaar garantie, biedt een oplossing voor vrijwel elk denkbaar dak. <br> <a href="http://www.schletter.de/EN/download/solar-mounting.html">Schletter solar mounting system.</a></p>
+      content3_html: <p>Feiyue Solar werkt met onder andere het Duitse Schletter montage systeem. Schletter is wereldmarktleider op het gebied van zonnepanelen montage systemen. Het bedrijf bestaat sinds 1968 en is sinds 2001 actief in solar bevestigingsmateriaal. Het zeer uitgebreide assortiment, met 10 jaar garantie, biedt een oplossing voor vrijwel elk denkbaar dak. <br> <a href="http://www.schletter.de/EN/download/solar-mounting.html">Schletter solar mounting system.</a></p>
     by_feiyue:
-      title: "Installatie door FEIYUE Solar"
-      content_html: <p>Door de grote ervaring bent u met Feiyue Solar verzekerd van een installatie met de hoogste kwaliteit. Feiyue Solar heeft alleen al in 2012 meer dan 3.000 zonnesystemen geïnstalleerd in Denemarken. Dit komt overeen met ongeveer 18 Megawatt. Feiyue Solar ApS is lid van de branchevereniging voor de bouw en zonne-energie en is gecertificeerd door het Deens Technologisch Instituut. Wij streven naar vakmanschap en professionaliteit. Er zit altijd 10-jaar garantie op de installatie werkzaamheden van Feiyue Solar.</p>
+      title: "Installatie door ZONIS Feiyue Solar"
+      content_html: <p>Door de grote ervaring bent u met ZONIS Feiyue Solar verzekerd van een installatie met de hoogste kwaliteit. Feiyue Solar heeft alleen al in 2012 meer dan 3.000 zonnesystemen geïnstalleerd in Denemarken. Dit komt overeen met ongeveer 18 Megawatt. Feiyue Solar ApS is lid van de branchevereniging voor de bouw en zonne-energie en is gecertificeerd door het Deens Technologisch Instituut. Wij streven naar vakmanschap en professionaliteit. Er zit altijd 10-jaar garantie op de installatie werkzaamheden van Feiyue Solar.</p>
     consultant:
       title: "Een installatie-adviseur komt bij u langs"
-      content_html: <p>U wordt altijd bezocht door één van onze adviseurs als u bij ons een zonnepanelensysteem bestelt. U kunt kiezen of onze adviseur u vóór of na uw aankoop bezoekt. De kosten van een bezoek bedragen € 149 als u kiest voor een bezoek vóór aankoop. Dit bedrag wordt van het aankoopbedrag afgetrokken als u besluit een installatie te kopen. De adviseur beoordeelt of uw dak geschikt is voor installatie van zonnepanelen. Onze montage adviseurs maken geen statische berekening, om de onderconstructie te kunnen garanderen zal er door u een constructeur moeten worden ingeschakeld. Als uw dak niet geschikt is, stelt hij een alternatieve plaatsingsmogelijkheid voor.</p>
+      content_html: <p>Zodra u een zonnepanelensysteem bij ons bestelt zijn er twee mogelijkheden om van de standaard aanbieding een aanbieding speciaal voor u op maat te maken. Wij adviseren u daarbij een bezoek door één van onze adviseurs, hiermee voorkomt u mogelijke risico's. </p>
+        <p><span class="underline">Voer uw eigen inventarisatie uit.</span> Wij maken voor u een projectadvies met projectrapportage en legplan op basis van de door u zelf aangeleverde gegevens. Hiervoor vragen wij u een inventarisatieformulier in te vullen en deze compleet bij ons aan te leveren. De kosten voor het projectadvies met projectrapportage en legplan zijn € 69,99 inclusief BTW maar dit bedrag wordt van het aankoopbedrag afgetrokken als u besluit een installatie te kopen.</p>
+        <p><span class="underline">Wilt u geen verassingen, heeft u plaats voor meer panelen, wilt u de panelen op uw platte dak monteren en voorkom eventueel onverwachte kosten!</span> De tweede, door ons geadviseerde, optie is een inventarisatie bezoek van één van onze specialisten. Hierbij voert de specialist de inventarisatie uit en geeft u persoonlijk uitleg en advies. Naar aanleiding van deze inventarisatie en het overleg zal er een projectrapport met advies en legplan worden gemaakt. Tevens kan de specialist de wijze van montage en eventuele uitbreidingsmogelijkheden met u bespreken. De kosten voor een dergelijk bezoek bedragen   € 169,99 inclusief BTW maar € 69,99 inclusief BTW wordt van het aankoopbedrag afgetrokken als u besluit een installatie te kopen. De adviseur beoordeelt of uw dak geschikt is voor installatie van zonnepanelen. Onze montage adviseurs maken geen statische berekening, om de onderconstructie te kunnen garanderen zal er door u een constructeur moeten worden ingeschakeld. Als uw dak niet geschikt is, stelt hij een alternatieve plaatsingsmogelijkheid voor.</p>
         <p><strong class="orange">Tijdens zijn bezoek doet de adviseur het volgende:</strong></p>
         <ul>
           <li>de locatie van de panelen bepalen conform de theoretische berekening/raming.</li>
@@ -25,22 +27,22 @@ nl:
           <li>de montagemethode bepalen die het best past bij de afstand tussen liggers en tengels.</li>
           <li>beoordelen of het plaatsen van een extra groep in de meterkast mogelijk en noodzakelijk is.</li>
           <li>beoordelen of de locatie geschikt is voor het plaatsen van een zonnepanelensysteem.</li>
-          <li>beoordelen locatie op wet en regelgeving en optioneel onderzoek met betrekking tot mogelijk te verkrijgen subsidies.</li>
+          <li>beoordelen locatie op wet en regelgeving.</li>
         </ul>
     standard:
       title: "Standaard installatie"
-      content_html: <p>Feiyue Solar kan in vrijwel ieder type huisvesting en op vrijwel ieder type dak installeren.</p>
+      content_html: <p>ZONIS Feiyue Solar kan in vrijwel ieder type huisvesting en op vrijwel ieder type dak installeren.</p>
         <p>Ook als uw huisvesting niet voldoet aan de vereisten voor standaardinstallatie kan er een oplossing worden gevonden.</p>
         <p>
           <strong class="orange">Een "standaard" installatie:</strong>
           <ul>
             <li>Goothoogte tot 6 meter.</li>
-            <li>Installatie op een vlak oppervlak (pannendak, eterniet, bitumen e.d.).</li>
-            <li>Tussen de omvormers en de zonnepanelen 100 meter kabel met een doorsnede van 4 mm.</li>
-            <li>Kabellengte tussen de omvormer en meterkast 7,5 meter.</li>
-            <li>Voldoende ruimte voor omvormers aanwezig en de omvormers moeten conform de richtlijnen te kunnen worden gemonteerd.</li>
-            <li>Bij blinde oplossingen dient er een loze leiding van de omvormer naar meterkast te zijn.</li>
-            <li>Meterkast dient geschikt te zijn voor de aangeboden zonnepaneleninstallatie.</li>
+            <li>Installatie op een vlak oppervlak bestaande uit dakpannen in windgebied 3.</li>
+            <li>Optioneel standaard mogelijk zijn een vlak oppervlak bestaande uit eterniet, bitumen e.d.</li>
+            <li>Tussen de omvormers en de zonnepanelen 100 meter kabel met een doorsnede van 4 mm. De kabellengte tussen de omvormer en meterkast is 7,5 meter. De bekabeling wordt standaard in buis of door kabelgoten op de wand gemonteerd. </li>
+            <li>Bij blinde oplossingen dient er al een geschikte loze leiding van de omvormer naar meterkast en van zonnepanelen naar omvormer te zijn.</li>
+            <li>Het exacte leidingtracé en de exacte plek alwaar de panelen worden gemonteerd worden tijdens de uitvoering bepaald.</li>
+            <li>Voldoende ruimte voor omvormers aanwezig en de omvormers moeten conform de richtlijnen kunnen worden gemonteerd.</li>
             <li>De bestaande elektrische aansluitingen in de woning moeten legaal zijn.</li>
             <li>Uw elektriciteitsleverancier moet uw huidige meter goedkeuren of een andere meter plaatsen die past in uw huidige meterkast / schakelpaneel.</li>
             <li>Meterkast dient geschikt te zijn voor de aangeboden zonnepaneleninstallatie.</li>
