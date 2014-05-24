@@ -2,13 +2,12 @@
   %ul#main-nav-bar.inline{ data: { hook: true } }
     %li#home-link{ data: { hook: true } }= link_to Spree.t(:home), spree.root_path
     %li.hover-dropdown
-      = link_to about_path do
-        = t(:about_menu)
+      = link_to '#' do
         %span.arrow-down
+        = t(:about_menu)
       %ul.hover-dropdown-menu
+        %li= link_to t(:about), about_path
         %li= link_to t(:energy_saving), energy_saving_path
-        %li= link_to 'custom page', '#'
-        %li= link_to 'custom page', '#'
     %li= link_to t(:profit), profit_path
     %li= link_to t('post.many'), posts_path
     %li= link_to t(:faq), faq_path
