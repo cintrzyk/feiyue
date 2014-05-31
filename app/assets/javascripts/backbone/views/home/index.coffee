@@ -19,6 +19,8 @@ class Feiyue.Views.HomeIndex extends Marionette.View
   createPlayer: ->
     @player = new YT.Player 'movie',
       videoId: '6QOQGZTnTeo'
+      playerVars:
+        html5: 1
       events:
         'onReady': @playMovie
 
