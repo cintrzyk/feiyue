@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140429153238) do
+ActiveRecord::Schema.define(version: 20140531113526) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,7 @@ ActiveRecord::Schema.define(version: 20140429153238) do
 
   add_index "spree_adjustments", ["adjustable_id"], name: "index_adjustments_on_order_id", using: :btree
   add_index "spree_adjustments", ["order_id"], name: "index_spree_adjustments_on_order_id", using: :btree
+  add_index "spree_adjustments", ["source_type", "source_id"], name: "index_spree_adjustments_on_source_type_and_source_id", using: :btree
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -236,6 +237,18 @@ ActiveRecord::Schema.define(version: 20140429153238) do
     t.integer "option_type_id"
   end
 
+  create_table "spree_option_value_translations", force: true do |t|
+    t.integer  "spree_option_value_id"
+    t.string   "locale"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "presentation"
+  end
+
+  add_index "spree_option_value_translations", ["locale"], name: "index_spree_option_value_translations_on_locale", using: :btree
+  add_index "spree_option_value_translations", ["spree_option_value_id"], name: "index_spree_option_value_translations_on_spree_option_value_id", using: :btree
+
   create_table "spree_option_values", force: true do |t|
     t.integer  "position"
     t.string   "name"
@@ -280,18 +293,20 @@ ActiveRecord::Schema.define(version: 20140429153238) do
 
   add_index "spree_orders", ["completed_at"], name: "index_spree_orders_on_completed_at", using: :btree
   add_index "spree_orders", ["number"], name: "index_spree_orders_on_number", using: :btree
+  add_index "spree_orders", ["user_id", "created_by_id"], name: "index_spree_orders_on_user_id_and_created_by_id", using: :btree
   add_index "spree_orders", ["user_id"], name: "index_spree_orders_on_user_id", using: :btree
 
   create_table "spree_payment_methods", force: true do |t|
     t.string   "type"
     t.string   "name"
     t.text     "description"
-    t.boolean  "active",      default: true
-    t.string   "environment", default: "development"
+    t.boolean  "active",       default: true
+    t.string   "environment",  default: "development"
     t.datetime "deleted_at"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "display_on"
+    t.boolean  "auto_capture"
   end
 
   create_table "spree_payments", force: true do |t|
@@ -330,10 +345,13 @@ ActiveRecord::Schema.define(version: 20140429153238) do
   add_index "spree_preferences", ["key"], name: "index_spree_preferences_on_key", unique: true, using: :btree
 
   create_table "spree_prices", force: true do |t|
-    t.integer "variant_id",                         null: false
-    t.decimal "amount",     precision: 8, scale: 2
-    t.string  "currency"
+    t.integer  "variant_id",                         null: false
+    t.decimal  "amount",     precision: 8, scale: 2
+    t.string   "currency"
+    t.datetime "deleted_at"
   end
+
+  add_index "spree_prices", ["variant_id", "currency"], name: "index_spree_prices_on_variant_id_and_currency", using: :btree
 
   create_table "spree_product_option_types", force: true do |t|
     t.integer  "position"
@@ -520,7 +538,7 @@ ActiveRecord::Schema.define(version: 20140429153238) do
     t.datetime "updated_at"
   end
 
-  add_index "spree_shipping_method_categories", ["shipping_category_id"], name: "index_spree_shipping_method_categories_on_shipping_category_id", using: :btree
+  add_index "spree_shipping_method_categories", ["shipping_category_id", "shipping_method_id"], name: "unique_spree_shipping_method_categories", unique: true, using: :btree
   add_index "spree_shipping_method_categories", ["shipping_method_id"], name: "index_spree_shipping_method_categories_on_shipping_method_id", using: :btree
 
   create_table "spree_shipping_methods", force: true do |t|
@@ -755,7 +773,7 @@ ActiveRecord::Schema.define(version: 20140429153238) do
 
   create_table "spree_variants", force: true do |t|
     t.string   "sku",                                     default: "",    null: false
-    t.decimal  "weight",          precision: 8, scale: 2
+    t.decimal  "weight",          precision: 8, scale: 2, default: 0.0
     t.decimal  "height",          precision: 8, scale: 2
     t.decimal  "width",           precision: 8, scale: 2
     t.decimal  "depth",           precision: 8, scale: 2
