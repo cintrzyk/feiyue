@@ -11,13 +11,6 @@
       %th= t(:created_at)
       %th.actions
     %tbody
-    - @contacts.each do |c|
-      %tr
-        %td= link_to c.name, admin_contact_path(c), title: "Details"
-        %td= c.phone.phony_formatted(format: :international)
-        %td= mail_to "#{c.email}", c.email
-        %td= c.address
-        %td{title: "#{c.created_at}"}= l c.created_at
-        %td.actions= link_to_delete c, { url: admin_contact_path(c), no_text: true }
+      = render @contacts
 - else
   %p No contact requests.

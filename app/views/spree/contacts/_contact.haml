@@ -1,0 +1,7 @@
+%tr
+  %td= link_to contact.name, admin_contact_path(contact), title: "Details"
+  %td= contact.phone.try(:phony_formatted, format: :international)
+  %td= mail_to contact.email, contact.email
+  %td= contact.address
+  %td{ title: contact.created_at }= l contact.created_at
+  %td.actions= link_to_delete contact, { url: admin_contact_path(contact), no_text: true }
