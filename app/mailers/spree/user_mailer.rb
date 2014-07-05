@@ -1,6 +1,5 @@
 class Spree::UserMailer < ActionMailer::Base
-  # FEIYUE_EMAIL = "Feiyue Solar <info@feiyuesolar.nl>"
-  FEIYUE_EMAIL = "Marcin Brzezinski <cintrzyk@gmail.com>"
+  FEIYUE_EMAIL = "Feiyue Solar <info@feiyuesolar.nl>"
 
   default from: FEIYUE_EMAIL
 
