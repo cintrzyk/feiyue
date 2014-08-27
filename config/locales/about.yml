@@ -6,12 +6,12 @@ nl:
     montage:
       title: "Montage"
       installation_team: "Installatieteam"
-      content1_html: <p>Als u een zonnepanelensysteem inclusief montage aanschaft, komt een montageploeg samen met een elektricien het systeem bij u installeren. Wij zorgen dat onze technici voldoende ervaring hebben en dat ze de installatie op verantwoorde wijze uitvoeren, in overeenstemming met de geldende wet en regelgeving. ZONIS Feiyue Solar streeft altijd naar de beste kwaliteit.</p>
+      content1_html: <p>Als u een zonnepanelensysteem inclusief montage aanschaft, komt een montageploeg samen met een elektricien het systeem bij u installeren. Wij zorgen dat onze technici voldoende ervaring hebben en dat ze de installatie op verantwoorde wijze uitvoeren, in overeenstemming met de geldende wet en regelgeving. Feiyue Solar streeft altijd naar de beste kwaliteit.</p>
       schletter: "Montagesysteem"
       content3_html: <p>Feiyue Solar werkt met onder andere het Duitse Schletter montage systeem. Schletter is wereldmarktleider op het gebied van zonnepanelen montage systemen. Het bedrijf bestaat sinds 1968 en is sinds 2001 actief in solar bevestigingsmateriaal. Het zeer uitgebreide assortiment, met 10 jaar garantie, biedt een oplossing voor vrijwel elk denkbaar dak. <br> <a href="http://www.schletter.de/EN/download/solar-mounting.html">Schletter solar mounting system.</a></p>
     by_feiyue:
-      title: "Installatie door ZONIS Feiyue Solar"
-      content_html: <p>Door de grote ervaring bent u met ZONIS Feiyue Solar verzekerd van een installatie met de hoogste kwaliteit. Feiyue Solar heeft alleen al in 2012 meer dan 3.000 zonnesystemen geïnstalleerd in Denemarken. Dit komt overeen met ongeveer 18 Megawatt. Feiyue Solar ApS is lid van de branchevereniging voor de bouw en zonne-energie en is gecertificeerd door het Deens Technologisch Instituut. Wij streven naar vakmanschap en professionaliteit. Er zit altijd 10-jaar garantie op de installatie werkzaamheden van Feiyue Solar.</p>
+      title: "Installatie door Feiyue Solar"
+      content_html: <p>Door de grote ervaring bent u met Feiyue Solar verzekerd van een installatie met de hoogste kwaliteit. Feiyue Solar heeft alleen al in 2012 meer dan 3.000 zonnesystemen geïnstalleerd in Denemarken. Dit komt overeen met ongeveer 18 Megawatt. Feiyue Solar ApS is lid van de branchevereniging voor de bouw en zonne-energie en is gecertificeerd door het Deens Technologisch Instituut. Wij streven naar vakmanschap en professionaliteit. Er zit altijd 10-jaar garantie op de installatie werkzaamheden van Feiyue Solar.</p>
     consultant:
       title: "Een installatie-adviseur komt bij u langs"
       content_html: <p>Zodra u een zonnepanelensysteem bij ons bestelt zijn er twee mogelijkheden om van de standaard aanbieding een aanbieding speciaal voor u op maat te maken. Wij adviseren u daarbij een bezoek door één van onze adviseurs, hiermee voorkomt u mogelijke risico's. </p>
@@ -31,7 +31,7 @@ nl:
         </ul>
     standard:
       title: "Standaard installatie"
-      content_html: <p>ZONIS Feiyue Solar kan in vrijwel ieder type huisvesting en op vrijwel ieder type dak installeren.</p>
+      content_html: <p>Feiyue Solar kan in vrijwel ieder type huisvesting en op vrijwel ieder type dak installeren.</p>
         <p>Ook als uw huisvesting niet voldoet aan de vereisten voor standaardinstallatie kan er een oplossing worden gevonden.</p>
         <p>
           <strong class="orange">Een "standaard" installatie:</strong>
