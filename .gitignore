@@ -9,3 +9,4 @@ config/application.yml
 *.swp
 public/uploads/*
 public/assets/*
+.gems
