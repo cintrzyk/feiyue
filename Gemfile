@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.3'
 ruby '2.3.1'
+gem 'rails', '4.0.13'
 
 gem 'pg'
 gem 'carrierwave'
@@ -30,10 +30,6 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv', '~> 2.0'
-end
-
-group :development, :test do
-  gem 'jazz_hands'
 end
 
 group :staging do

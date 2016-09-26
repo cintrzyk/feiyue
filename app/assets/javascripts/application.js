@@ -6,7 +6,7 @@
 //= require raphael
 //= require morris
 
-//= require js_stack/base
+//= require js_stack
 //= require backbone/feiyue
 
 //= require store/spree_frontend
